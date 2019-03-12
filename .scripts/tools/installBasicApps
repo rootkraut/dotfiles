@@ -1,0 +1,10 @@
+sudo pacman -Syu
+sudo pacman -S bitcoin-qt calcurse chromium dmenu feh go htop gnupg i3 irssi keepass keepassx2 lutris mc neovim networkmanager network-manager-applet ranger rxvt-unicode scrot thunar thunar-archive-plugin thunar-volman thunderbird ttf-bitstream-vera ttf-liberation tmux usbutils vlc unzip unrar urxvt-perls
+
+if ! [ -x "$(command -v trizen)" ]; then
+  echo 'Trizen not installed... will do it now!' >&2
+  cd /tmp
+  git clone https://aur.archlinux.org/trizen.git && cd trizen && makepkg -si
+fi
+
+trizen -S urxvt-resize-font-git clipit
