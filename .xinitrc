@@ -1,5 +1,5 @@
 xrdb -merge ~/.Xresources
-~/fehbg &
+~/.scripts/tools/usebg &
 xscreensaver -no-splash &
 clipit & 
 exec i3
